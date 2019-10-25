@@ -2,19 +2,20 @@
  
  void setup()   
  {     
-  bob = new Bacteria[10];
-   for(int i = 0; i < 10; i++){
+  bob = new Bacteria[100];
+   for(int i = 0; i < 100; i++){
      bob[i] = new Bacteria();
    }
  	size(300, 300);
   loop();
-  background(0);
+  background(255);
   }   
  
  void draw()   
  {    
-   background(0);
- 	 for(int i = 0; i < 10; i++){
+   background(255);
+ 	 for(int i = 0; i < 100; i++){
+   
    bob[i].move();
    bob[i].show();
    }
@@ -44,7 +45,7 @@
   
   void show(){
     fill(myColor);
-    ellipse(myX, myY, 10,10);
+    ellipse(myX, myY, 7,7);
   }
  }
  
